@@ -79,7 +79,7 @@ ksql_packages:
 ksql_default_user: cp-ksql
 ksql_default_group: confluent
 ksql:
-  config_file: "/etc/{{'ksqldb'}}/ksql-server.properties"
+  config_file: "/etc/ksqldb/ksql-server.properties"
   systemd_file: /usr/lib/systemd/system/{{ksql_service_name}}.service
   systemd_override: /etc/systemd/system/{{ksql_service_name}}.service.d/override.conf
 
